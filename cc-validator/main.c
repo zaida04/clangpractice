@@ -20,39 +20,39 @@ int main(void)
         cc_clone1 /= 10;
     }
 
-    char base[15];
+    char* base;
 
     if (first_digit == 3)
     {
         if ((second_digit != 4 && second_digit != 7) || length != 15)
         {
             printf("INVALID\n");
-            return 0;
+            return 1;
         }
-        strcpy(base, "AMEX\n");
+        base = "AMEX";
     }
     else if (first_digit == 5)
     {
         if ((second_digit < 1 || second_digit > 5) || length != 16)
         {
             printf("INVALID\n");
-            return 0;
+            return 1;
         }
-        strcpy(base, "MASTERCARD\n");
+        base = "MASTERCARD";
     }
     else if (first_digit == 4)
     {
         if (length != 13 && length != 16)
         {
             printf("INVALID\n");
-            return 0;
+            return 1;
         }
-        strcpy(base, "VISA\n");
+        base = "VISA";
     }
     else
     {
         printf("INVALID\n");
-        return 0;
+        return 1;
     }
 
     long cc_clone2 = cc;
@@ -83,9 +83,9 @@ int main(void)
     if (total % 10 != 0)
     {
         printf("INVALID\n");
-        return 0;
+        return 1;
     }
 
-    printf("%s", base);
+    printf("%s\n", base);
     return 0;
 }
