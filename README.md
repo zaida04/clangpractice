@@ -7,4 +7,4 @@ My implementation and exercises of various C lang concepts
 This exercise implements [Luhn's Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm) in order to validate that the inputted long int matches the structure of a credit card, and that it belongs to a valid credit card vendor and follows their specs.
 
 ### [MARIO](https://github.com/zaida04/clangpractice/tree/master/mario)
-This exercise takes input from the user and creates a "mario like" tower with an incrementing tower of the specific size.
+This exercise takes input from the user and creates a "mario like" incrementing in width tower of the specified size.
